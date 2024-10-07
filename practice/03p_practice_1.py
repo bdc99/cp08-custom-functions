@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,29 +12,24 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ===========================
+# CUSTOM FUNCTIONS - PRACTICE
+# ===========================
 
-'''
-    1st step: Write a function that prints out
-    "Welcome to class!" and then call the function
-'''
+# 1. FUNCTION, NO PARAMETERS OR RETURN
+# Write a function that prints out
+# "Welcome to class!" and then call the function
 
 
-'''    2nd step: Write a function that accepts a parameter with your name. Insert your name
-        into the function and have it print "Welcome to class, yourName!"
+# 2. FUNCTION, WITH PARAMETERS, NO RETURN
+# Write a function that accepts a parameter with your name. Insert your name
+# into the function and have it print "Welcome to class, <name>!"
         
-'''
 
-'''
-3rd step: Write a function that accepts a parameter with your name. 
-        keep the function printing "Welcomee to class, yourName!" but also return the first letter of your name.
-        Hint: for any string you can do sVariable[0] to get the first letter.
-
-        Then outside of your function, print out "This is the first letter of my name: x"
-'''
-
-
+# 3. FUNCTION, WITH PARAMETERS & RETURN
+# Write a function that accepts a parameter with your name. 
+# keep the function printing "Welcomee to class, <name>!" but also return the
+# first letter of your name.
+# Then outside of your function, print out "This is the first letter of my name: x"
 
 

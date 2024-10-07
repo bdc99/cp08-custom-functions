@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,26 +12,32 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# =============
+# SCOPE - LOCAL
+# =============
 
 '''
-    A key concept related to functions is called "Scope"
-    
-    Scope in Python determines where a variable can be accessed or modified in your code.
-    Essentially, if a variable is defined inside a function, it's only available within that function (local scope);
-    if it's defined outside the function, it can be accessed anywhere in the file (global scope).
-    
-    Understanding scope helps prevent conflicts between variables and makes your code easier to manage.
+OVERVIEW
+--------
 
-    local variable: defined inside of a function
+A key concept related to functions is called "Scope"
 
-    global variable: defined outside of a function.
+Scope in Python determines where a variable can be accessed or
+modified in your code.
+
+LOCAL SCOPE
+-----------
+Variables defined inside of a function.
+
+If a variable is defined inside a function, it's only available within that function (local scope);
+
+Understanding scope helps prevent conflicts between variables and makes your
+code easier to manage.
 
 '''
 
-# you are given this function:
+# 1. TRYING TO ACCESS LOCAL SCOPE VARIABLES
+# Given this function:
 
 def my_function():
     local_variable = "I am local to my_function"
@@ -37,9 +45,8 @@ def my_function():
 
 my_function()
 
-
 # try to print out local_variable outside the function:
-#print(local_variable) # This will cause an error if it is run.
+# print(local_variable) # This will cause an error if it is run.
 
 
 

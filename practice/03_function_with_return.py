@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,26 +12,37 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ==============================
+# CUSTOM FUNCTIONS - WITH RETURN
+# ==============================
 
 '''
-    return values instantly end your function.
-    They send back any variable back to where it was called.
-    So if you want to store the returned variable, do something like:
-        stored_variable = function_name("argument")
+OVERVIEW
+--------
 
-    functions can only return one variable. If you want to return many variables, put it in a list, tuple, dictionary, etc.
+return values instantly end your function.
+They send back any variable back to where it was called.
+
+So if you want to store the returned variable, do something like:
+    stored_variable = function_name("argument")
+
+functions can only return one variable.
+If you want to return many variables, put it in a list, tuple, dictionary, etc.
 
 '''
 
-# Write a function called simple_function_4 with a parameter called "text_message".
-# but, instead of printing out "This is your message: " with the text_message appended, return that value.
+# 1. FUNCTION WITH RETURN
+# Write a function called simple_function_5 with a parameter called
+# "text_message". But, instead of printing out
+# "This is your message: <text message>" return the string.
+# call the function and print out the returned value.
 
 
-# call simple_function_4. Store the value it returns in a variable, then print out that variable.
 
 
+# 2. FUNCTION WITH MULTIPLE RETURNS
+# Write a function called simple_function_5 with a parameter called
+# "text_message". If text_message is equal to "Dumb" then return
+# "That is mean!". Otherwise, just return text_message.
+# Call the function and print out the returned value.
 
-# call simple_function_4, but print out the returned variable directly (e.g. don't store the returned variable in a new variable):

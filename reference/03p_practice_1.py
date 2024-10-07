@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,66 +12,48 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ===========================
+# CUSTOM FUNCTIONS - PRACTICE
+# ===========================
 
-'''
-    1st step: Write a function that prints out
-    "Welcome to class!" and then call the function
-'''
+# 1. FUNCTION, NO PARAMETERS OR RETURN
+# Write a function that prints out
+# "Welcome to class!" and then call the function
 
-
-'''    2nd step: Write a function that accepts a parameter with your name. Insert your name
-        into the function and have it print "Welcome to class, yourName!"
-        
-'''
-
-'''
-3rd step: Write a function that accepts a parameter with your name. 
-        keep the function printing "Welcomee to class, yourName!" but also return the first letter of your name.
-        Hint: for any string you can do sVariable[0] to get the first letter.
-
-        Then outside of your function, print out "This is the first letter of my name: x"
-'''
-
-
-
-
-## VERSION 1:
-def functionName1():
+def function_1():
     print("Welcome to class")
 
-# calling the first function. No parameters required
-functionName1()
+function_1()
 
-## VERSION 2:
-# now we have a variable we are passing in:
-def functionName2(sName):
-    print("Welcome to class, " + sName + "!")
+# 2. FUNCTION, WITH PARAMETERS, NO RETURN
+# Write a function that accepts a parameter with your name. Insert your name
+# into the function and have it print "Welcome to class, <name>!"
+        
+def function_2(name):
+    print(f"Welcome to class, {name}!")
 
-sExampleName = "Jacob"
-functionName2(sExampleName)
+example_name = "Jacob"
+function_2(example_name)
 
-## VERSION 2.1
-# I didn't originally ask about this, but someone asked about default values:
-# this will work with or without passing a variable now.
-def functionName2_1(sName = "Jacob"):
-    print("Welcome to class, " + sName + "!")
+# Version 2.1, if you wanted a default value:
+def function_2_1(name = "Jacob"):
+    print(f"Welcome to class, {name}!")
 
-sExampleName = "James"
-functionName2_1(sExampleName) # we can pass a variable
-functionName2_1()
+example_name_2 = "James"
+function_2_1(example_name_2) # we can pass a variable
+function_2_1()
 
-## VERSION 3:
-# This function recieves a name as the input and returns the very first letter of the name as an ouput
-def functionName3(sName = "jacob"):
-    print("Welcome to class, " + sName + "!")
-    firstNameLetter = sName[0]
-    return(firstNameLetter)
+# 3. FUNCTION, WITH PARAMETERS & RETURN
+# Write a function that accepts a parameter with your name. 
+# keep the function printing "Welcomee to class, <name>!" but also return the
+# first letter of your name.
+# Then outside of your function, print out "This is the first letter of my name: x"
 
-sExampleName = "James"
-print("This is the first letter of my name:" +  functionName3(sExampleName)) 
+def function_3(name = "jacob"):
+    print(f"Welcome to class, {name}!")
+    first_letter = name[0]
+    return(first_letter)
 
-
+example_name_3 = "John"
+print(f"This is the first letter of my name: {function_3(example_name_3)}") 
 

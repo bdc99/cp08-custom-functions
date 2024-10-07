@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,18 +12,27 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# =======================================
+# CUSTOM FUNCTIONS - REFACTORING PRACTICE
+# =======================================
 
 '''
-The whole point of writing functions is to decrease repetition,
-and create code that has a specific purpose that can be reused multiple times.
+OVERVIEW
+--------
+
+One primary benefit of writing functions is to decrease repeating similar code
+over and over.
+
+Use practice file to "refactor" existing code to make it more succinct and 
+efficient. "Refactoring" just refers to improving code without altering its
+actual functionality.
+
 '''
 
-
-# PRACTICE
 '''
+SITUATION
+---------
+
 I'm giving you data on 3 students: their GPA, their ACT score, and if they got FAFSA approved.
 
 I want to calculate if BYU will give them a scholarship. This occurs in 2 situations:
@@ -32,9 +43,6 @@ Note that this is made up and simplified, its just for practice.
 
 The code below is already written for you. Look after this code for your task instructions.
 '''
-
-
-
 # Student 1 data: GPA, ACT score, FAFSA approved
 student1_gpa = 3.5
 student1_act = 28
@@ -63,15 +71,23 @@ if (student3_gpa >= 3.0 and student3_act >= 25) or student3_fafsa_approved:
 else:
     print("Student 3 does not qualify for a scholarship.")
 
-'''
-YOUR TASK:
+# 1. YOUR TASK:
+# Rewrite the code above by making a function so you aren't repeating the same
+# if statements over and over.
+# Call your function check_scholarship that accepts 3 parameters: GPA, ACT,
+# and FAFSA_approved. It should return a statement on if a student qualified
+# or not for a scholarship. Then call the function 3 times and print out
+# whether each of the below 3 students should get a scholarship.
 
-After this code, try and rewrite it using a function that would make it so you aren't repeating the same if statements over and over.
-Use a function called check_scholarship that accepts 3 parameters: GPA, ACT, and FAFSA_approved.
-It should return a statement on if a student qualified or not for a scholarship.
+# Data for each student
+student1_gpa = 3.5
+student1_act = 28
+student1_fafsa_approved = True
 
-'''
+student2_gpa = 3.2
+student2_act = 23
+student2_fafsa_approved = False
 
-##################
-# REWRITE THE BETTER CODE HERE:
-#################
+student3_gpa = 2.8
+student3_act = 30
+student3_fafsa_approved = False

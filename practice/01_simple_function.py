@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,21 +12,23 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ===========================================
+# CUSTOM FUNCTIONS - NO PARAMETERS, NO RETURN
+# ===========================================
+
+'''
+OVERVIEW
+--------
+
+A function is just stored code that you can reuse!
+
+Define a function with def
+Then call it afterwards by writing the function name with parentheses
 
 '''
 
-    Define a function with def
-    Then call it afterwards by writing the function name with parentheses
 
-    A function is just stored code that you can reuse!
-
-'''
-
-
-# Practice:
+# 1. SIMPLE FUNCTION:
 # write a function called simple_function
 # it should just print out "Wow this is a simple function" on one line
 # and "Wow this is another line" after that.
