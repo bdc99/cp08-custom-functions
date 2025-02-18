@@ -69,3 +69,5 @@ It is generally better to just pass in global variables as arguments:
 def better_version(local_variable):
     print(local_variable)
 
+# 2. PASS IN GLOBAL VARIABLES AS ARGUMENTS
+# Call better_version, and pass in global_variable as an argument

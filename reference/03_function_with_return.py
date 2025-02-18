@@ -45,12 +45,12 @@ print(returned_value_1)
 
 
 # 2. FUNCTION WITH MULTIPLE RETURNS
-# Write a function called simple_function_5 with a parameter called
+# Write a function called simple_function_6 with a parameter called
 # "text_message". If text_message is equal to "Dumb" then return
 # "That is mean!". Otherwise, just return text_message.
 # Call the function and print out the returned value.
 
-def simple_function_6(text_message):
+def simple_function_6(text_message, another):
     if text_message == "Dumb":
         return "That is mean!"
     
@@ -58,3 +58,4 @@ def simple_function_6(text_message):
 
 returned_value_2 = simple_function_6("Dumb")
 print(returned_value_2)
+

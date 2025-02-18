@@ -41,7 +41,7 @@ If you want to return many variables, put it in a list, tuple, dictionary, etc.
 
 
 # 2. FUNCTION WITH MULTIPLE RETURNS
-# Write a function called simple_function_5 with a parameter called
+# Write a function called simple_function_6 with a parameter called
 # "text_message". If text_message is equal to "Dumb" then return
 # "That is mean!". Otherwise, just return text_message.
 # Call the function and print out the returned value.
