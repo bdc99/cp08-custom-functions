@@ -24,7 +24,13 @@ clear_screen()
 # 2. FUNCTION, WITH PARAMETERS, NO RETURN
 # Write a function that accepts a parameter with your name. Insert your name
 # into the function and have it print "Welcome to class, <name>!"
-        
+def function_1(name):
+    print(f"welcome to class, {name}!")
+
+my_name = "ben"
+function_1 = my_name
+
+
 
 # 3. FUNCTION, WITH PARAMETERS & RETURN
 # Write a function that accepts a parameter with your name. 
@@ -32,4 +38,12 @@ clear_screen()
 # first letter of your name.
 # Then outside of your function, print out "This is the first letter of my name: x"
 
+def function_3(name):
+    print(f"welcome to class, {name}!")
 
+    return name(0)
+
+my_name = "Ben"
+first_letter = function_3(my_name)
+
+print(f"the first letter of my name is {first_letter}")

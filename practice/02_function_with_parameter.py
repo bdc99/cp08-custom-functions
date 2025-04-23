@@ -34,8 +34,12 @@ The actual values that get put in the the parameters are called "arguments"
 # Then inside the function, print out that text with
 # "This is your message: <text_message>"
 # Afterwards, call the function 2 times.
+def simple_function_2(text_message):
+    print(f"this is your message: {text_message}")
 
-
+simple_function_2("I am a person!")
+simple_function_2("I am a dog!")
+    
 
 # 2. INCORRECTLY CALLING A FUNCTION
 # What happens if you don't provide an argument when the
@@ -47,7 +51,12 @@ The actual values that get put in the the parameters are called "arguments"
 # Make a new function, called simple_function_3 that does the same thing
 # as simple_function_2, but add a default value of "this is the default"
 # for the parameter text_message.
+def simple_function_3(text_message = "this is the default"):
+    print(f"this is your message: {text_message}")
 
+clear_screen()
+simple_function_3("I am a person!")
+simple_function_3()
 
 
 '''
@@ -63,4 +72,9 @@ if in the function definition must also have default values.
 # and text_message_2 not have a default try to run it and notice the error
 # you get. 
 
+def simple_function_4(text_message_1 = "default #1", text_message_2):
+    print(f"this is your concetated message: {text_message_1} {text_message_2}")
 
+clear_screen()
+simple_function_4("first message", "A really great 2nd message")
+simple_function_4("first message")

@@ -36,7 +36,10 @@ If you want to return many variables, put it in a list, tuple, dictionary, etc.
 # "text_message". But, instead of printing out
 # "This is your message: <text message>" return the string.
 # call the function and print out the returned value.
+def simple_function_5(text_message):
+    return f"this is your message: {text_message}"
 
+print(simple_function_5("Hello IS 303"))
 
 
 
@@ -46,3 +49,12 @@ If you want to return many variables, put it in a list, tuple, dictionary, etc.
 # "That is mean!". Otherwise, just return text_message.
 # Call the function and print out the returned value.
 
+def simple_function_6(text_message):
+    if text_message. lower() == "Dumb": 
+        return f"that is mean! {text_message}"
+    else:
+        return text_message
+
+clear_screen()
+print(simple_function_6{"this is a message!"})
+print(simple_function_6{"Dumb"})

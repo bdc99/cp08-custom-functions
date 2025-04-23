@@ -33,4 +33,9 @@ Then call it afterwards by writing the function name with parentheses
 # it should just print out "Wow this is a simple function" on one line
 # and "Wow this is another line" after that.
 # then call the function 3 times
+def simple_function():
+    print("wow this is a simple function")
 
+simple_function()
+simple_function()
+simple_function()

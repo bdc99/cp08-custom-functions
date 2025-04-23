@@ -23,3 +23,12 @@ clear_screen()
 # just ignore that possibility. this is just simple practice.
 # call the function and print the result
 
+def math_function(number_1 = 1, number_2 = 2):
+    result = (number_1 / number_2) * 100
+    return result
+
+
+input_1 = input("Enter first: ")
+input_2 = input("Enter second: ")
+stored_result = math_function(input_1, input_2)
+print(stored_result)
